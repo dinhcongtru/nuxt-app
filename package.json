@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "env HOST='127.0.0.1' MONGO_URI='mongodb+srv://root:12345@nuxt-3.ev4us.mongodb.net/nuxt-app?retryWrites=true&w=majority&appName=nuxt-3' node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@nuxt/devtools": "^1.6.4",
+    "@nuxt/eslint": "^0.7.3",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "dotenv": "^16.4.7",
+    "joi": "^17.13.3",
+    "mongodb": "^6.12.0",
+    "nuxt": "^3.14.1592",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "joi-to-typescript": "^4.15.0"
+  }
+}
