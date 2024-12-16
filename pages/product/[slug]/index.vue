@@ -1,9 +1,9 @@
 <template>
-    
+    <div>ad</div>
 </template>
 <script lang="ts" setup>
 definePageMeta({
-    layout: 'default',
+    layout: 'custom',
 })
 </script>
 <style lang="css">
