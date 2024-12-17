@@ -12,6 +12,7 @@ const ProductSchema = new Schema(
         size: {type: [String]},
         quantity: {type: String},
         descriptions: {type: String},
+        colors: {type: [String]},
     },
     {
         timestamps: true,

@@ -1,5 +1,10 @@
+// declare module '@splidejs/vue-splide';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
+  experimental: {
+    asyncContext: true
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   ssr: true,
@@ -19,9 +24,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
+    '@nuxt/image',
     '@nuxt/fonts',
-    '@nuxt/image'
+    'nuxt-splide',
   ],
+  splide: {
+    theme: 'default'
+  },
   imports: {
     dirs: [
       'composables',

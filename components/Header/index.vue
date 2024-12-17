@@ -1,5 +1,5 @@
 <template>
-    <header id="header" class="sticky bottom-0 bg-white z-10 border-b border-yd-line-divider">
+    <header id="header" class="sticky top-0 bg-white z-10 border-b border-yd-line-divider">
         <div class="inner max-w-7xl mx-auto px-11 py-5 flex items-center justify-between">
             <div class="wrapper flex items-center gap-8">
                 <div class="logo">
@@ -23,7 +23,9 @@ import {dataOptionMenu} from '~/constants/home/index'
 
 const keySearch = ref<string>('');
 watchEffect(() => {
-    console.log(keySearch.value);
+    if(process.client) {
+        console.log(keySearch.value);
+    }
     
 })
 </script>

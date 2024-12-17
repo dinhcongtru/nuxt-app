@@ -1,10 +1,6 @@
 <template>
     <Header />
-    <main id="main">
-        <div class="inner">
-            <slot />
-        </div>
-    </main>
+    <slot />
     <Footer />
 </template>
 <script lang="ts" setup>

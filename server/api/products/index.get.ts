@@ -1,5 +1,4 @@
 import Product from "~/server/api/lib/models/product";
-import type { ObjectId } from "mongoose";
 import { ResponseApi } from "../../response";
 import connect from "../lib/database";
 

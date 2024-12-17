@@ -9,4 +9,5 @@ import Joi from "joi";
     size: Joi.array<string>(),
     quantity: Joi.string(),
     descriptions: Joi.string(),
+    colors: Joi.array<string>(),
 });

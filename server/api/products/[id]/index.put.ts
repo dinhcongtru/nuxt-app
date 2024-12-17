@@ -5,7 +5,7 @@ import { Types } from "mongoose";
 export default defineEventHandler(async (event) => {
     try {
         const body = await readBody(event);
-        const { productCode, productName, price, discount, imageURLs, size, quantity, descriptions } = body;
+        const { productCode, productName, price, discount, imageURLs, size, quantity, descriptions,colors } = body;
         const productId = getRouterParam(event, 'id');
         if (!productId) {
             throw createError({
@@ -32,8 +32,8 @@ export default defineEventHandler(async (event) => {
             });
         }
 
-        const updateProduct = await Product.findByIdAndUpdate(
-            productId, { productCode, productName, price, discount, imageURLs, size, quantity, descriptions }
+        await Product.findByIdAndUpdate(
+            productId, { productCode, productName, price, discount, imageURLs, size, quantity, descriptions,colors }
         );
 
         return new ResponseApi(200, 1, "product updated");
