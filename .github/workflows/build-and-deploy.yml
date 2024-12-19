@@ -1,8 +1,8 @@
 name: Build and Deploy
 on: 
   push:
-    branches:
-      - main
+    tags:
+      - v*  # Deploy cho tất cả các tag bắt đầu bằng 'v'
 permissions:
   contents: write
 jobs:
