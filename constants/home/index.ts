@@ -1,3 +1,4 @@
+type SeoMetaParams = Parameters<typeof useSeoMeta>[0];
 export const dataOptionMenu = [
     {
         href: '#',
@@ -56,4 +57,14 @@ export const productData = [
     descriptions: 'Bộ đồ mềm nhẹ, lành tính dành cho các bạn thiếu niên mặc nhà siêu thoải mái. Sản phẩm sử dụng vải Cotton Compact được dệt từ sợi bông USA cao cấp - Cotton bền vững: Góp phần bảo vệ môi trường sống. Thấm hút mồ hôi tốt, thoáng mát, rất thích hợp với thời tiết nóng ẩm tại Việt Nam. Co giãn nhẹ, phù hợp với chuyển động của cơ thể.',
     colors: [''],
     },
-]
+];
+
+export const SeoMeta: SeoMetaParams = {
+    title: 'YODY - Look Good - Feel Good',
+    ogTitle: 'My Amazing Site',
+    description: 'This is my amazing site, let me tell you all about it.',
+    ogDescription: 'This is my amazing site, let me tell you all about it.',
+    ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+};
+export const optionSplideConfig = { perPage: 1, perMove: 1, type: 'loop', autoplay: true, arrows: true, easing: 'linear' };

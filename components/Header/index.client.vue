@@ -19,16 +19,12 @@
     </header>
 </template>
 <script lang="ts" setup>
-import {dataOptionMenu} from '~/constants/home/index'
+import { dataOptionMenu } from '~/constants/home/index'
 
 const keySearch = ref<string>('');
 watchEffect(() => {
-    if(process.client) {
-        console.log(keySearch.value);
-    }
-    
+    console.log(keySearch.value);
+
 })
 </script>
-<style lang="css">
-    
-</style>
+<style lang="css"></style>

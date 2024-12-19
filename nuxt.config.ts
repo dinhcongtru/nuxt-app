@@ -1,4 +1,3 @@
-// declare module '@splidejs/vue-splide';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 

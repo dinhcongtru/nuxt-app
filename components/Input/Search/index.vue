@@ -13,10 +13,28 @@ const props = defineProps<{
 
 const emits = defineEmits(['update:modelValue']);
 
-const onChange = (event: Event) => {
+const onChangeEmit = (event: Event) => {
   const target = event.target as HTMLInputElement;
   emits('update:modelValue', target.value);
 }
+
+
+const debounce = <T extends (...args: any[]) => void>(
+  mainFunction: T,
+  delay: number
+): ((...args: Parameters<T>) => void) => {
+  let timer: ReturnType<typeof setTimeout>;
+
+  return (...args: Parameters<T>) => {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      mainFunction(...args);
+    }, delay);
+  };
+};
+
+const onChange = debounce(onChangeEmit, 500);
 
 
 </script>
