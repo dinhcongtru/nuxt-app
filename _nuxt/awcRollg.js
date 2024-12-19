@@ -1,0 +1,1 @@
+import{_ as s,o,c as t,a,i as c}from"./OlykJiIQ.js";const n={},r={id:"main",class:"layout-product"},_={class:"inner"};function d(e,i){return o(),t("main",r,[a("div",_,[c(e.$slots,"default")])])}const f=s(n,[["render",d]]);export{f as default};
