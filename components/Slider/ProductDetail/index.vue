@@ -17,7 +17,7 @@
     </div>
 </template>
 <script lang="ts" setup>
-import type { Options, Splide } from '@splidejs/splide';
+import type { Options } from '@splidejs/splide';
 const props = defineProps<{
     optionMain: Options;
     optionThumnails: Options;
@@ -29,8 +29,8 @@ const thumbSplide = ref<any>(null);
 
 onMounted(() => {
     if (mainSplide.value && thumbSplide.value) {
-        mainSplide.value.sync(thumbSplide.value);
-    }
+    mainSplide.value.splide.sync(thumbSplide.value.splide)
+  }
 })
 
 </script>

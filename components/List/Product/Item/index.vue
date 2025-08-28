@@ -7,8 +7,8 @@
         <div class="txt_desp">
             <h3 class="title text-[#1c2430] text-sm font-normal mb-2">{{ props.productName }}</h3>
             <div class="price mb-3 flex items-center gap-2">
-                <strong class="pri_discount font-semibold text-base text-[#e14337]">{{ priceDiscount + ' đ' }}</strong>
-                <span class="price_current line-through text-[12px] font-[400] text-[#C7C7C7]">{{ props.price + ' đ' }}</span>
+                <strong class="pri_discount font-semibold text-base text-[#e14337]">{{ priceDiscount ? priceDiscount.toLocaleString('vi-VN', {style: 'currency',currency: 'VND'}) : 0 + ' đ' }}</strong>
+                <span class="price_current line-through text-[12px] font-[400] text-[#C7C7C7]">{{ props.price ? Number(props.price).toLocaleString('vi-VN', {style: 'currency',currency: 'VND'}) : 0 + ' đ' }}</span>
             </div>
             <ul class="colors flex items-center gap-2">
                 <li v-for="(e, i) in props.colors" :key="i">
