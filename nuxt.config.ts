@@ -6,10 +6,10 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  ssr: true,
+  ssr: false,
 
   nitro: {
-    preset: 'vercel',
+    preset: 'static',
   },
 
   runtimeConfig: {
@@ -23,7 +23,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
-    '@nuxt/image',
     '@nuxt/fonts',
     'nuxt-splide',
   ],
