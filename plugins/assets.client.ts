@@ -1,4 +1,5 @@
 // plugins/assets.client.ts
+// plusgin import global images
 export default defineNuxtPlugin(() => {
   const assets = import.meta.glob('~/assets/images/*', { eager: true })
   const images: Record<string, string> = {}
