@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start": "env HOST='127.0.0.1' MONGO_URI='mongodb+srv://root:12345@nuxt-3.ev4us.mongodb.net/nuxt-app?retryWrites=true&w=majority&appName=nuxt-3' node .output/server/index.mjs"
+    "start": "env HOST='127.0.0.1' node .output/server/index.mjs"
   },
   "dependencies": {
     "@nuxt/devtools": "^1.6.4",
