@@ -33,7 +33,7 @@ export const optionthumbnails: Options = {
 };
 
 export const dataImageURL = [
-    '/bo-do-coc-tay-tre-em-lon-yody-BDK7178-XDU (3).webp',
-    '/kid_yody_01.webp',
-    '/bo-do-tre-em-yody-BDK7178-XDU (6).webp'
+    'pct-kid-detail-02',
+    'kid_yody_01',
+    'pct-kid-detail-03'
 ]

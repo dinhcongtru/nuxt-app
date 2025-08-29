@@ -39,9 +39,9 @@ export const dataOptionMenu = [
 ]
 
 export const dataSlideBannerTop = [
-    '/m3znuyyryyggerzrlgl3110_1800x833-07.webp',
-    '/m40pezoh9j22rf0z4lf1800x833.webp',
-    '/m3znur9zvuebk2kiqxk3110_1800x8331.webp'
+    'banner-01',
+    'banner-02',
+    'banner-03'
 ];
 
 export const productData = [
@@ -55,7 +55,7 @@ export const productData = [
     size: ['M','L','XL'],
     quantity: '30',
     descriptions: 'Bộ đồ mềm nhẹ, lành tính dành cho các bạn thiếu niên mặc nhà siêu thoải mái. Sản phẩm sử dụng vải Cotton Compact được dệt từ sợi bông USA cao cấp - Cotton bền vững: Góp phần bảo vệ môi trường sống. Thấm hút mồ hôi tốt, thoáng mát, rất thích hợp với thời tiết nóng ẩm tại Việt Nam. Co giãn nhẹ, phù hợp với chuyển động của cơ thể.',
-    colors: ['/color_blue.webp','/color_bee.webp'],
+    colors: [],
     },
 ];
 

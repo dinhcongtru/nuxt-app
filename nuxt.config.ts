@@ -37,9 +37,4 @@ export default defineNuxtConfig({
       'composables/**'
     ]
   },
-  image: {
-    quality: 80,
-    format: ['webp'],
-    dir: 'assets/images'
-  }
 })

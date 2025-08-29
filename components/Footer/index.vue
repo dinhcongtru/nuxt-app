@@ -99,16 +99,16 @@
           </p>
           <ul class="flex items-center gap-5">
             <li>
-              <NuxtImg
-                src="/bct_v1.webp"
+              <img
+                src="/assets/images/bct_v1.webp"
                 width="106"
                 height="40"
                 alt="privacy"
               />
             </li>
             <li>
-              <NuxtImg
-                src="/dmca_v1.webp"
+              <img
+                src="/assets/images/dmca_v1.webp"
                 width="80"
                 height="40"
                 alt="privacy"

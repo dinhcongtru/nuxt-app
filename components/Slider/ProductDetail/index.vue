@@ -3,14 +3,14 @@
         <Splide :options="props.optionThumnails" :has-track="false" ref="thumbSplide">
             <SplideTrack>
                 <SplideSlide v-for="(e, i) in props.dataImageURL" :key="i">
-                    <NuxtImg :src="e" class="size-full object-cover" alt="slide image thumb" />
+                    <img :src="$images[e]" class="size-full object-cover" alt="slide image thumb" />
                 </SplideSlide>
             </SplideTrack>
         </Splide>
         <Splide :options="props.optionMain" :has-track="false" ref="mainSplide">
             <SplideTrack>
                 <SplideSlide v-for="(e, i) in props.dataImageURL" :key="i">
-                    <NuxtImg :src="e" :width="495" alt="slide image thumb" />
+                    <img :src="$images[e]" :width="495" alt="slide image thumb" />
                 </SplideSlide>
             </SplideTrack>
         </Splide>

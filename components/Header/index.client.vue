@@ -4,7 +4,7 @@
             <div class="wrapper flex items-center gap-8">
                 <div class="logo">
                     <NuxtLink to="/">
-                        <NuxtImg src="/Logo.3eb91388.png" width="88" height="42" alt="logo" />
+                        <img src="/assets/images/logo.png" width="88" height="42" alt="logo" />
                     </NuxtLink>
                 </div>
                 <nav class="nav">

@@ -41,13 +41,13 @@
             <span class="pb-2 inline-block">Màu sắc: Be</span>
             <ul class="color_list flex items-center gap-2">
                 <li>
-                    <NuxtImg src="/color_blue.webp"
-                        class="rounded-[9999px] cursor-pointer border-transparent border-solid border" :width="44"
+                    <img src="/assets/images/color_blue.webp"
+                        class="rounded-[9999px] h-11 w-11 cursor-pointer border-transparent border-solid border" :width="44"
                         :height="44" />
                 </li>
                 <li>
-                    <NuxtImg src="/color_bee.webp"
-                        class="rounded-[9999px] cursor-pointer border-transparent border-solid border" :width="44"
+                    <img src="/assets/images/color_bee.webp"
+                        class="rounded-[9999px] h-11 w-11 cursor-pointer border-transparent border-solid border" :width="44"
                         :height="44" />
                 </li>
             </ul>
@@ -80,16 +80,16 @@
                 <Icon name="uil:shop" />
             </ButtonSecondary>
             <ButtonSecondary value="Liên hệ đặt hàng">
-                <NuxtImg src="/icons8-zalo.svg" :width="20" :height="20" alt="zalo" />
+                <img src="/assets/images/icons8-zalo.svg" :width="20" :height="20" alt="zalo" />
             </ButtonSecondary>
         </div>
         <div class="payments py-6 px-4">
             <div class="flex items-center justify-center gap-3 mb-3">
-                <NuxtImg src="/zalopay.webp" :width="82" alt="zalo pay" />
-                <NuxtImg src="/visa-card.webp" :width="39" alt="visa card" />
-                <NuxtImg src="/master-card.webp" :width="46" alt="master-card" />
-                <NuxtImg src="/vnpay-qr.webp" :width="63" alt="vnpay-qr" />
-                <NuxtImg src="/momo.webp" :width="28" alt="momo" />
+                <img src="/assets/images/zalopay.webp" :width="82" alt="zalo pay" />
+                <img src="/assets/images/visa-card.webp" :width="39" alt="visa card" />
+                <img src="/assets/images/master-card.webp" :width="46" alt="master-card" />
+                <img src="/assets/images/vnpay-qr.webp" :width="63" alt="vnpay-qr" />
+                <img src="/assets/images/momo.webp" :width="28" alt="momo" />
             </div>
             <p class="privacy text-center text-xs font-medium text-[#394960]">Đảm bảo thanh toán an toàn và bảo mật</p>
         </div>

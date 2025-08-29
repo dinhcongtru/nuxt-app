@@ -2,7 +2,7 @@
     <Splide :options="props.options" :has-track="false">
         <SplideTrack>
             <SplideSlide v-for="(e, i) in props.data" :key="i">
-                <NuxtImg :src="e" width="100%" height="100%" alt="slider banner" class="size-full" />
+                <img :src="$images[e]" width="100%" height="100%" alt="slider banner" class="size-full" />
             </SplideSlide>
         </SplideTrack>
         <slot name="arrows"/>
