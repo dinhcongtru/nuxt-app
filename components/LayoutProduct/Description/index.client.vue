@@ -41,7 +41,12 @@
             <span class="pb-2 inline-block">Màu sắc: Be</span>
             <ul class="color_list flex items-center gap-2">
                 <li>
-                    <NuxtImg src="/products/color_blue.webp"
+                    <NuxtImg src="/color_blue.webp"
+                        class="rounded-[9999px] cursor-pointer border-transparent border-solid border" :width="44"
+                        :height="44" />
+                </li>
+                <li>
+                    <NuxtImg src="/color_bee.webp"
                         class="rounded-[9999px] cursor-pointer border-transparent border-solid border" :width="44"
                         :height="44" />
                 </li>

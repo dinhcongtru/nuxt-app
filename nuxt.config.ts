@@ -10,13 +10,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'vercel',
-    publicAssets: [
-      {
-        baseURL: "/images",
-        dir: "assets/images",
-        maxAge: 60 * 60 * 24 * 30,
-      }
-    ]
   },
 
   runtimeConfig: {
@@ -45,12 +38,8 @@ export default defineNuxtConfig({
     ]
   },
   image: {
-    provider: process.env.NODE_ENV === 'production' ? 'vercel' : 'ipx',
-    vercel: {
-      baseURL: process.env.VERCEL_URL || 'http://localhost:3000'
-    },
-    dir: "assets/images",
     quality: 80,
-    format: ['webp', 'png', 'jpg', 'svg']
+    format: ['webp'],
+    dir: 'assets/images'
   }
 })
